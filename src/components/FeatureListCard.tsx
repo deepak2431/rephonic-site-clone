@@ -9,12 +9,14 @@ interface IProps {
 const FeatureListCard = ({title, featureLists}: IProps) => {
     return (
     <div className="feature_list_card">
-        <h3>{title}</h3>
-        <ul>
-            {featureLists.map(list => (
-                <li key={list}>{list}</li>
-            ))}
-        </ul>
+        <h2>{title}</h2>
+        <div className="feature_lists">
+            <ul className="text_para">
+                {featureLists.map(list => (
+                    <li key={list}>{list}</li>
+                ))}
+            </ul>
+        </div>
         <button className='card_button'>Learn More</button>
     </div>
     )

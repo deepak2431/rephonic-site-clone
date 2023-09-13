@@ -1,5 +1,5 @@
 import React from "react";
-import ContentCard from "../components/ContentCard";
+import ContentCard from "../../../components/ContentCard";
 import OutreachSection from "./OutreachSection";
 
 const firstContentImg = "https://rephonic.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdatabase.16d684c8.png&w=1920&q=75"

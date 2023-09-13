@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
-import Button from '../components/Button';
+import Button from '../../../components/Button';
 
 const HeaderImage = "https://rephonic.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.e75a4370.png&w=2048&q=75";
 
