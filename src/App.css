@@ -1,12 +1,61 @@
 :root {
   --box-shadow-color: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    --text-color: rgba(0, 0, 0, 0.6);
+}
+
+.text_para {
+  color: var(--text-color);
+}
+
+
+.content_section {
+  margin-top: 60px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.header {
+  margin: 20px;
+}
+
+.header_content_section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header_content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+}
+
+ h1 {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 52px;
+}
+p {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.company_logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .feature_card {
   box-shadow: var(--box-shadow-color);
-  width: 220px;
-  margin: 20px;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 30px;
 }
 
 .card_content {
@@ -21,6 +70,63 @@
   border-color: #1890ff;
   background-color: #fff;
   padding: 5px;
-  width: 50%;
-
+  width: 120px;
 }
+
+.cta_button {
+  background-color: #1890ff;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.feature_list_card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: var(--box-shadow-color);
+  padding: 20px;
+  width: 220px;
+  margin: 20px;
+}
+.content_description_section {
+  margin-top: 100px;
+}
+.content_description_card {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  flex-wrap: wrap;
+  margin: 30px;
+  margin-top: 100px;
+}
+.content_card_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.outreach_section {
+  margin-top: 150px;
+  box-shadow: var(--box-shadow-color);
+  background-color: #E9E9EC ;
+  border-radius: 30px;
+  padding: 50px
+}
+.outreach_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.outreach_cards > * {
+  flex-basis: 25rem;
+}
+

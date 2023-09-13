@@ -6,13 +6,13 @@ interface IProps {
     content: string
 }
 
-const FeatureCard = () => { 
+const FeatureCard = ({ logoSrc, title, content}: IProps) => { 
     return(
         <div className='feature_card'>
             <div className='card_content'>
-                <img style={{width: '50px'}} src='https://rephonic.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fperson.ca629d04.svg&w=96&q=75' alt='Card Logo' />
-                <h3>Guest Apperances</h3>
-                <p>Discover relevant podcasts, reach out and get booked. Get your message out to the right listeners.</p>
+                <img style={{width: '40px'}} src={logoSrc} alt='Card Logo' />
+                <h3>{title}</h3>
+                <p className="text_para">{content}</p>
                 <button className='card_button'>Learn More</button>
             </div>
         </div>
