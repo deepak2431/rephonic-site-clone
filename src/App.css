@@ -109,7 +109,7 @@ p {
   flex-direction: row;
   gap: 95px;
   flex-wrap: wrap;
-  margin: 30px;
+  margin: 10px;
   margin-top: 150px;
 }
 .content_card_section {
@@ -175,6 +175,7 @@ p {
   color: #fff;
   width: 140px;
 }
+
 input[type="text"] {
   padding: 8px;
   width: 500px;
@@ -196,4 +197,22 @@ input[type="text"] {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  input[type="text"] {
+    width: 150px;
+  }
+  .search_button {
+    width: 100px;
+  }
+  .footer_section_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .content_description_card {
+    margin-top: 50px;
+  }
+  
 }
